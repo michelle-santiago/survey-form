@@ -1,0 +1,15 @@
+
+html{
+    box-sizing:border-box; //padding and border are included in the width and height
+    font-size:100%; //for accessibility, match 100% default size 16 px
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;//resets
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:var(--background-color);
+    color:var(--text-color);
+}

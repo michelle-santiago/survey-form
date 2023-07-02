@@ -1,0 +1,297 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="dist/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <title>Survey Form</title>
+    </head>
+    <body> 
+        <div class="container">    
+            <nav class="navbar">
+                <a class="navbar-brand" href="#home">
+                    S<i class="bi bi-headphones"></i>RVEY
+                </a>
+                <div class="nav-row">
+                    <a class="nav-item" href="#home">Home</a>
+                    <a class="nav-item" href="#about">About</a>   
+                    <a class="nav-item" href="#forms">Forms</a>
+                    <a class="nav-item" href="#contact">Contact</a>
+                </div>
+            </nav> 
+            <main class="hero-container">    
+                <div class="hero-img">
+                    <div class="hero-desc">
+                        <div id="title"><h1>MUSIC SURVEY</h1></div>
+                        <hr>
+                        <p id="description">Music Survey is designed to understand individual's perception and music preference. With this form, individuals can fill out
+                        music preferences, factors that influence that musical choices, how they listen to music, and so on. 
+                        </p>
+                        <a class="btn" href="#survey" role="button">Take a survey</a>
+                    </div>
+                </div>  
+             </main>  
+            <section id="survey">
+                <header class="form-header"></header>
+                <form id="survey-form" class="form-container">
+                <p><strong><h1 class="form-title">Survey Form</h1></strong></p>
+                <h3>Personal Information</h3>
+                <label for="name" id="name-label">Name</label>
+                <div class="row">
+                    <input type="text" name="name" placeholder="Enter your name" class="form-control" id="name"  required>
+                </div>
+                <div class="row2">
+                    <div class="col2">
+                        <label for="email" id="email-label">Email</label>
+                        <input type="email" name="email" placeholder="Enter your email" class="form-control" id="email" required>
+                    </div>
+                    <div class="col2">
+                        <label for="age" id="number-label">Age</label>
+                        <input type="number" name="age" placeholder="Enter your age"  class="form-control" id="number"  min="10" max="99" required>
+                    </div>
+                </div>  
+                <h3>Questions</h3>
+                <p><strong>1.Where do you live?</strong></p> 
+                <div class="row">
+                    <div class="col">
+                    <div class="form-check">
+                            <input type="radio" name="from" value="Central Asia" required>
+                            <label for="Central Asia" class="form-check-label">Central Asia</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="from" value="East Asia">
+                            <label for="East Asia" class="form-check-label">East Asia</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="from" value="South Asia">
+                            <label for="South Asia" class="form-check-label">South Asia</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="from" value="Southeast Asia">
+                            <label for="Southeast Asia" class="form-check-label">Southeast Asia</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="from" value="West Asia">
+                            <label for="West Asia" class="form-check-label">West Asia</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="from" value="Africa">
+                            <label for="Africa" class="form-check-label">Africa</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <input type="radio" name="from" value="West Europe">
+                            <label for="West Europe" class="form-check-label">West Europe</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="from" value="East Europe">
+                            <label for="East Europe" class="form-check-label">East Europe</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="from" value="North America">
+                            <label for="North America" class="form-check-label">North America</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="from" value="Central America">
+                            <label for="Central America" class="form-check-label">Central America</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="from" value="South-America">
+                            <label for="South America" class="form-check-label">South America</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="from" value="Australia/Oceania">
+                            <label for="Australia/Oceania" class="form-check-label">Australia/Oceania</label>
+                        </div>
+                    </div>
+                </div>
+                <p><strong>2. How often do you listen to music on a daily basis?</strong></p>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-check">
+                            <input type="radio" name="often" value="Never" required>
+                            <label for="Never" class="form-check-label">Never</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="often" value="Once" required>
+                            <label for="Once" class="form-check-label">Once</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="often" value="2-3" required>
+                            <label for="2-3 times" class="form-check-label">2-3 Times</label>
+                        </div>  
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <input type="radio" name="often" value="4-7" required>
+                            <label for="4-7 times" class="form-check-label">4-7 Times</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="often" value="7-10" required>
+                            <label for="7-10 times" class="form-check-label">7-10 Times</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="often" value="constantly" required>
+                            <label for="constantly" class="form-check-label">Constantly</label>
+                        </div>
+                    </div>
+                </div>   
+                <p><strong>3. What are your favorite genres of music?</strong></p>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="genres" value="Instrumental">
+                            <label class="form-check-label" for="genres">Instrumental</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="genres" value="Country">
+                            <label class="form-check-label" for="genres">Country</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="genres" value="Jazz">
+                            <label class="form-check-label" for="genres">Jazz</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="genres" value="Pop">
+                            <label class="form-check-label" for="genres">Pop</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="genres" value="Rock">
+                            <label class="form-check-label" for="genres">Rock</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="genres" value="Reggae">
+                            <label class="form-check-label" for="genres">Reggae</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="genres" value="Alternative">
+                            <label class="form-check-label" for="genres">Alternative</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="genres" value="Hip-Hop/Rap">
+                            <label class="form-check-label" for="genres">Hip-Hop/Rap</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="genres" value="Dubstep">
+                            <label class="form-check-label" for="genres">Dubstep</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="genres" value="K-pop">
+                            <label class="form-check-label" for="genres">K-pop</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="genres" value="Foreign">
+                            <label class="form-check-label" for="genres">Foreign</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="genres" value="no_preference">
+                            <label class="form-check-label" for="genres">No preference, I enjoy all types</label>
+                        </div> 
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="genres" value="none">
+                            <label class="form-check-label" for="genres">I don't really like any music</label>
+                        </div>
+                    </div>
+                </div>
+                <p>Others, please specify</p>
+                <div class="row">
+                    <textarea class="form-control" type="textarea" name="genres-other"></textarea>
+                </div>  
+                <p><strong>4. If you had to choose your least favorite type of music out of the following, what would it be?</strong></p>    
+                <div class="form-group">
+                    <label for="least">Choose one:</label>
+                    <select class="form-control" name="least" id="least">
+                    <option>Alternative</option>
+                    <option>Dubstep</option>
+                    <option>Classical</option>
+                    <option>Pop</option>
+                    <option>Instrumental</option>
+                    <option>Hip-Hop/Rap</option>
+                    <option>Reggae</option>
+                    <option>Jazz</option>
+                    <option>Country</option>
+                    <option>Rock</option>
+                    <option>Foreign</option>
+                    <option>K-Pop</option>
+                    <option>I don't dislike any type of music</option>
+                    </select>
+                </div>      
+                <p><strong>5. In your opinion, which of the following music genres gets overlooked too easily?</strong></p>      
+                <div class="form-group">
+                    <label for="overlooked">Choose one: </label>
+                    <select class="form-control" name="overlooked" id="overlooked">
+                    <option>Alternative</option>
+                    <option>Dubstep</option>
+                    <option>Classical</option>
+                    <option>Pop</option>
+                    <option>Instrumental</option>
+                    <option>Hip-Hop/Rap</option>
+                    <option>Reggae</option>
+                    <option>Jazz</option>
+                    <option>Country</option>
+                    <option>Rock</option>
+                    <option>Foreign</option>
+                    <option>K-Pop</option>
+                    <option>Unsure</option>
+                    </select>
+                </div> 
+                <p><strong>6. In what ways do you listen to music?</strong></p>    
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="ways" value="Spotify">
+                    <label class="form-check-label" for="ways">Spotify</label>
+                </div> 
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="ways" value="Sound Cloud">
+                    <label class="form-check-label" for="ways">Sound Cloud</label>
+                </div>   
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="ways" value="IPod/MP3 Player">
+                    <label class="form-check-label" for="ways">	IPod/MP3 Player</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="ways" value="Youtube">
+                    <label class="form-check-label" for="ways">Youtube</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="ways" value="Radio">
+                    <label class="form-check-label" for="ways">Radio</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="ways" value="none">
+                    <label class="form-check-label" for="ways">	I don't listen to music</label>
+                </div>
+                <p>Others, please specify</p>
+                <div class="row">
+                    <textarea class="form-control" type="textarea" name="ways-other"></textarea>
+                </div>    
+                <p><strong>7. What's your favorite thing about music?</strong></p>
+                <div class="form-group">
+                    <textarea class="form-control" name="favourite" id="favorite" rows="3"></textarea>
+                </div>   
+                <p><strong>8. Do you have any comments or suggestion for this survey?</strong></p>
+                <div class="form-group">
+                    <textarea class="form-control" name="comment" id="comment" rows="3"></textarea>
+                </div>  
+                <hr>
+                
+                <div class="row">
+                    <button class="btn" type="submit">Submit</button>
+                </div>   
+                
+                <p><small>
+                    <i>Reference for survey questions: 
+                    <a href="https://studentsoftheworld.info/vote/survey.php?REF=1855" target="_blank" class="ref">https://studentsoftheworld.info/vote/survey.php?REF=1855
+                    </a></i>
+                </small></p>
+                </form>  
+            </section>           
+        </div>        
+    
+        <footer><p>©2022 Survey Form</p>
+        </footer>
+    </body>
+
+</html>

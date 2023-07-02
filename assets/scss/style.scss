@@ -1,0 +1,56 @@
+@forward 'globals';
+@forward 'layout';
+@forward 'nav';
+@forward 'forms';
+
+.img-fluid{
+   width: 100%;  
+}
+.container{
+    width: 100%;
+}
+footer{
+    padding: 10px;
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+.ref{
+    color: teal;
+}
+.form-header{
+    width:100%;
+    height: 50px;
+}
+.hero-container{
+    width: 90vw;
+    height: 100vh;
+    padding: 4%;
+    margin: auto;
+}
+.hero-desc{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white; 
+}
+
+.hero-img{
+    //C:\Users\micha\AvionSchool\Survey form\assets\img\listening_to_music.jpg
+    //background-image:url("./assets/img/listening_to_music.jpg");//not working
+    //background-image:url("assets/img/listening_to_music.jpg");//not working
+    background-image:url("img/listening_to_music.jpg");//working
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+    box-shadow: 5px 8px 16px 5px rgb(173, 224, 224);
+}
+#survey{
+    background-color:rgb(144, 214, 214);
+    height: 100vh;
+    width: 100wh;
+}

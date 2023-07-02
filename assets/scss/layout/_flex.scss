@@ -1,0 +1,32 @@
+.row{
+    display: flex;
+    background-color: white;
+    
+}
+.row2{
+    display: flex;
+    background-color: white;
+    
+}
+.col{
+    flex: 50%;
+}
+.col2{
+    flex: 50%;
+}
+@media (max-width: 768px) {
+    .row2 {
+        flex-direction: column;
+    }
+    .col2{
+        flex: 100%;
+    }
+}
+@media (max-width: 375px) {
+    .row {
+      flex-direction: column;
+    }
+    .col{
+        flex: 100%;
+    }
+}
